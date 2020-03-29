@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "NetStatus"
+  spec.name         = "AENetStatus"
   spec.version      = "1.0.0"
   spec.summary      = "A small framework to monitor network changes in Swift."
 
@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
                     NetStatus is a small and lightweight Swift framework that allows to monitor and being notified for network status changes in a super-easy way!
                    DESC
 
-  spec.homepage     = "https://github.com/abdallahEid/NetStatus"
+  spec.homepage     = "https://www.google.com/"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+  spec.ios.deployment_target = "12.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files = 'NetStatus/**/*.{swift}'
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

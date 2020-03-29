@@ -9,30 +9,30 @@
 import Foundation
 import Network
 
-class NetStatus {
+public class NetStatus {
     
     // MARK: - Properties
     
-    static let shared = NetStatus()
+    public static let shared = NetStatus()
     
-    var monitor: NWPathMonitor?
+    public var monitor: NWPathMonitor?
     
-    var isMonitoring = false
+    public var isMonitoring = false
     
-    var didStartMonitoringHandler: (() -> Void)?
+    public var didStartMonitoringHandler: (() -> Void)?
     
-    var didStopMonitoringHandler: (() -> Void)?
+    public var didStopMonitoringHandler: (() -> Void)?
     
-    var netStatusChangeHandler: (() -> Void)?
+    public var netStatusChangeHandler: (() -> Void)?
     
     
-    var isConnected: Bool {
+    public var isConnected: Bool {
         guard let monitor = monitor else { return false }
         return monitor.currentPath.status == .satisfied
     }
     
     
-    var interfaceType: NWInterface.InterfaceType? {
+    public var interfaceType: NWInterface.InterfaceType? {
         guard let monitor = monitor else { return nil }
         
         return monitor.currentPath.availableInterfaces.filter {
@@ -40,13 +40,13 @@ class NetStatus {
     }
     
     
-    var availableInterfacesTypes: [NWInterface.InterfaceType]? {
+    public var availableInterfacesTypes: [NWInterface.InterfaceType]? {
         guard let monitor = monitor else { return nil }
         return monitor.currentPath.availableInterfaces.map { $0.type }
     }
     
     
-    var isExpensive: Bool {
+    public var isExpensive: Bool {
         return monitor?.currentPath.isExpensive ?? false
     }
     
@@ -65,7 +65,7 @@ class NetStatus {
     
     // MARK: - Method Implementation
     
-    func startMonitoring() {
+    public func startMonitoring() {
         guard !isMonitoring else { return }
         
         monitor = NWPathMonitor()
@@ -81,7 +81,7 @@ class NetStatus {
     }
     
     
-    func stopMonitoring() {
+    public func stopMonitoring() {
         guard isMonitoring, let monitor = monitor else { return }
         monitor.cancel()
         self.monitor = nil
