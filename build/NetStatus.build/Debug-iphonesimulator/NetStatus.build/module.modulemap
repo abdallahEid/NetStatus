@@ -1,0 +1,11 @@
+framework module NetStatus {
+  umbrella header "NetStatus.h"
+
+  export *
+  module * { export * }
+}
+
+module NetStatus.Swift {
+    header "NetStatus-Swift.h"
+    requires objc
+}

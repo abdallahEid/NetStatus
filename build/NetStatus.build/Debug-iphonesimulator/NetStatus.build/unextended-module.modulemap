@@ -1,0 +1,10 @@
+framework module NetStatus {
+  umbrella header "NetStatus.h"
+
+  export *
+  module * { export * }
+}
+
+module NetStatus.__Swift {
+    exclude header "NetStatus-Swift.h"
+}

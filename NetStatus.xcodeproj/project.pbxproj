@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		95E5F83E243134BD007C2661 /* NetStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E5F83C243134BD007C2661 /* NetStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95E5F846243134DD007C2661 /* NetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E5F845243134DD007C2661 /* NetStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		95E5F839243134BD007C2661 /* NetStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E5F83C243134BD007C2661 /* NetStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetStatus.h; sourceTree = "<group>"; };
 		95E5F83D243134BD007C2661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E5F845243134DD007C2661 /* NetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,19 @@
 		95E5F83B243134BD007C2661 /* NetStatus */ = {
 			isa = PBXGroup;
 			children = (
+				95E5F844243134C9007C2661 /* Source */,
 				95E5F83C243134BD007C2661 /* NetStatus.h */,
 				95E5F83D243134BD007C2661 /* Info.plist */,
 			);
 			path = NetStatus;
+			sourceTree = "<group>";
+		};
+		95E5F844243134C9007C2661 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				95E5F845243134DD007C2661 /* NetStatus.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					95E5F838243134BD007C2661 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E5F846243134DD007C2661 /* NetStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		95E5F842243134BD007C2661 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JD9U9LGBU4;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = abdallah.NetStatus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		95E5F843243134BD007C2661 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JD9U9LGBU4;

@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "25b1a44a65f42ba61ffa0e59cc06b9f5"
+build_time: [1585511774, 608922000]
+inputs:
+  "/Users/vezeeta/Downloads/NetStatus/NetStatus/Source/NetStatus.swift": [1585511773, 334289246]

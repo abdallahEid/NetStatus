@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/vezeeta/Downloads/NetStatus/build/Debug-iphonesimulator/NetStatus.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/vezeeta/Downloads/NetStatus/build/NetStatus.build/Debug-iphonesimulator/NetStatus.build/unextended-module.modulemap",
+    }]
+  }]
+}
